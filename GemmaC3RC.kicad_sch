@@ -1573,126 +1573,6 @@
 				)
 			)
 		)
-		(symbol "power:+BATT"
-			(power)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+BATT"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+BATT\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power battery"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+BATT_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+BATT_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0) hide
-					(name "+BATT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_names
@@ -1794,7 +1674,7 @@
 		(at 76.2 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "165d9f82-26bb-4110-8efb-51b100c84ee8")
+		(uuid "28db3a26-3f19-4ec4-97ec-0749725ce64e")
 	)
 	(junction
 		(at 78.74 71.12)
@@ -1813,6 +1693,20 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d453ff1-dc0b-4eb8-be50-7806c8e466b7")
+	)
+	(no_connect
+		(at 129.54 50.8)
+		(uuid "d3954c9d-ae21-4e5a-b22d-f41b4edeeb62")
+	)
+	(wire
+		(pts
+			(xy 93.98 73.66) (xy 93.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0023503f-9bf5-4269-a8db-30ec1758a278")
 	)
 	(wire
 		(pts
@@ -1866,13 +1760,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 50.8) (xy 135.89 50.8)
+			(xy 80.01 76.2) (xy 76.2 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3b13cccb-f842-41e4-bd0e-0f18a1cde3bc")
+		(uuid "3304f9d5-0aba-4d21-b76f-482cc67416e5")
 	)
 	(wire
 		(pts
@@ -1906,13 +1800,23 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 73.66) (xy 93.98 73.66)
+			(xy 76.2 73.66) (xy 76.2 76.2)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6a3af7e7-9a70-4121-8f17-af3cc0dcd12d")
+		(uuid "55c61fa3-da6b-42d5-b07b-e0c10b44bbbe")
+	)
+	(wire
+		(pts
+			(xy 92.71 90.17) (xy 93.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "61c8aee8-fcfc-4dfb-937f-9129bb4bb45e")
 	)
 	(wire
 		(pts
@@ -1953,6 +1857,16 @@
 			(type default)
 		)
 		(uuid "c2a69081-494e-4522-be9a-ddae59dde775")
+	)
+	(wire
+		(pts
+			(xy 76.2 73.66) (xy 80.01 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df441ac6-67d8-45fc-a0f9-93e00deeaf94")
 	)
 	(wire
 		(pts
@@ -2017,7 +1931,7 @@
 		(uuid "4d64d1fa-761e-4f19-8b9c-46907f453c23")
 	)
 	(label "GP21"
-		(at 133.35 101.6 0)
+		(at 80.01 76.2 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2237,7 +2151,7 @@
 		(uuid "e4ec924a-9f0b-4748-ba3c-139a9e6a2d79")
 	)
 	(label "GP20"
-		(at 133.35 115.57 0)
+		(at 92.71 104.14 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2257,6 +2171,72 @@
 			(justify left bottom)
 		)
 		(uuid "e597a6be-b81e-479d-b1f3-aeb6f8fd0ddb")
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 73.66 60.96 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00db6e7e-3eb5-4312-ae7f-e71b17949f4d")
+		(property "Reference" "#PWR011"
+			(at 69.85 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 75.184 62.484 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 73.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 73.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 73.66 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e5446271-29d7-4ac0-93d9-d6bb3f0e0694")
+		)
+		(instances
+			(project "GemmaC3RC"
+				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
+					(reference "#PWR011")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:+3.3V")
@@ -2393,6 +2373,73 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 69.85 135.89 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "21a81381-f05e-4ec7-ab9f-846d9a396103")
+		(property "Reference" "#PWR08"
+			(at 66.04 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 73.66 136.525 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 69.85 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 69.85 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 69.85 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "963f6cfc-2f83-429a-bc35-fa21793a26a0")
+		)
+		(instances
+			(project "GemmaC3RC"
+				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
+					(reference "#PWR08")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 71.12 121.92 90)
 		(unit 1)
@@ -2461,7 +2508,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 128.27 115.57 0)
+		(at 87.63 104.14 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2469,7 +2516,7 @@
 		(dnp no)
 		(uuid "31607b76-505e-4754-a99d-27e6b3dbf442")
 		(property "Reference" "J9"
-			(at 128.27 120.65 0)
+			(at 87.63 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2477,7 +2524,7 @@
 			)
 		)
 		(property "Value" "Ext2"
-			(at 129.54 111.76 0)
+			(at 88.9 100.33 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2485,7 +2532,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 128.27 115.57 0)
+			(at 87.63 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2494,7 +2541,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 115.57 0)
+			(at 87.63 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2503,7 +2550,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 115.57 0)
+			(at 87.63 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2661,73 +2708,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 71.12 119.38 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "40c152e1-b4d5-4642-9db7-0f58505eb764")
-		(property "Reference" "#PWR016"
-			(at 67.31 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 74.93 120.015 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 71.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 71.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 71.12 119.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "00d421b0-904d-4025-9d23-e4219358426e")
-		)
-		(instances
-			(project "GemmaC3RC"
-				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector:Conn_01x06_Pin")
 		(at 27.94 130.81 0)
 		(unit 1)
@@ -2807,73 +2787,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+BATT")
-		(at 69.85 135.89 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "48e8b8d6-ba62-41a7-8db2-fa4c4f7ad542")
-		(property "Reference" "#PWR022"
-			(at 66.04 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 73.66 136.525 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 69.85 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 69.85 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 69.85 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d047b560-7704-448f-ac23-93ee5a7e4540")
-		)
-		(instances
-			(project "GemmaC3RC"
-				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 33.02 133.35 270)
 		(unit 1)
@@ -2942,7 +2855,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 118.11 90)
+		(at 92.71 106.68 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2951,7 +2864,7 @@
 		(fields_autoplaced yes)
 		(uuid "59b813f5-8f77-4ccf-b6bb-ee96cd87386a")
 		(property "Reference" "#PWR09"
-			(at 139.7 118.11 0)
+			(at 99.06 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2960,7 +2873,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 118.745 90)
+			(at 96.52 107.315 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2969,7 +2882,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 118.11 0)
+			(at 92.71 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2978,7 +2891,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 118.11 0)
+			(at 92.71 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2987,7 +2900,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 118.11 0)
+			(at 92.71 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3072,139 +2985,6 @@
 			(project "GemmaC3RC"
 				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
 					(reference "J5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 135.89 50.8 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "6c6c5d08-dcaf-4625-86da-bc3f64402acc")
-		(property "Reference" "#PWR08"
-			(at 132.08 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 139.7 51.435 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 135.89 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "5f0d6cec-3f65-4050-91a1-6989e524a039")
-		)
-		(instances
-			(project "GemmaC3RC"
-				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
-					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+BATT")
-		(at 73.66 60.96 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "712cf8f3-a852-476c-a00b-28558b8471b6")
-		(property "Reference" "#PWR019"
-			(at 69.85 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+BATT"
-			(at 74.93 62.23 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 73.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 73.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 73.66 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4c653d7a-61e8-4351-8def-7290c9db5255")
-		)
-		(instances
-			(project "GemmaC3RC"
-				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
-					(reference "#PWR019")
 					(unit 1)
 				)
 			)
@@ -3415,7 +3195,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x02_Pin")
-		(at 128.27 101.6 0)
+		(at 87.63 90.17 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3423,7 +3203,7 @@
 		(dnp no)
 		(uuid "83a3360b-69b9-4744-8d99-6b41ed322452")
 		(property "Reference" "J8"
-			(at 128.27 106.68 0)
+			(at 87.63 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3431,7 +3211,7 @@
 			)
 		)
 		(property "Value" "Ext1"
-			(at 129.54 97.79 0)
+			(at 88.9 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3439,7 +3219,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 128.27 101.6 0)
+			(at 87.63 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3448,7 +3228,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 128.27 101.6 0)
+			(at 87.63 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3457,7 +3237,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 128.27 101.6 0)
+			(at 87.63 90.17 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4117,7 +3897,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 133.35 104.14 90)
+		(at 92.71 92.71 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4126,7 +3906,7 @@
 		(fields_autoplaced yes)
 		(uuid "c453b726-adb6-4ade-80e6-e5ca63b5343a")
 		(property "Reference" "#PWR026"
-			(at 139.7 104.14 0)
+			(at 99.06 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4135,7 +3915,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 137.16 104.775 90)
+			(at 96.52 93.345 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4144,7 +3924,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 133.35 104.14 0)
+			(at 92.71 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4153,7 +3933,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 133.35 104.14 0)
+			(at 92.71 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4162,7 +3942,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 133.35 104.14 0)
+			(at 92.71 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4625,6 +4405,73 @@
 			(project "GemmaC3RC"
 				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 71.12 119.38 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "fb7c71a4-06a5-4f6f-805b-def2632b9d60")
+		(property "Reference" "#PWR010"
+			(at 67.31 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 74.93 120.015 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "f277c687-27db-40c2-93a4-6056edac64c4")
+		)
+		(instances
+			(project "GemmaC3RC"
+				(path "/b10b7441-68fa-49c0-9dad-fceb534010fc"
+					(reference "#PWR010")
 					(unit 1)
 				)
 			)
